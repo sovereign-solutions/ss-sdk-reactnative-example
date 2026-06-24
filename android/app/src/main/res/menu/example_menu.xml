@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_draw_point"
+        android:title="Draw Point" />
+
+    <item
+        android:id="@+id/action_draw_line"
+        android:title="Draw Line" />
+
+    <item
+        android:id="@+id/action_draw_polygon"
+        android:title="Draw Polygon" />
+
+    <item
+        android:id="@+id/action_optimize_route"
+        android:title="Optimize Route"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_clear"
+        android:title="Clear" />
+
+</menu>

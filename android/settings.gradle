@@ -1,0 +1,37 @@
+pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
+plugins { id("com.facebook.react.settings") }
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+rootProject.name = 'SsTrackingDemo'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+
+    repositories {
+        google()
+        mavenCentral()
+
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+       maven {
+            name = "ssmapAndroid"
+            url = uri("https://artifact.sovereignsolutions.tech/artifactory/ssmap-android")
+            credentials {
+                username = providers.gradleProperty("artifactory_user").get()
+                password = providers.gradleProperty("artifactory_password").get()
+            }
+        }
+        maven {
+            name = "sstrackingAndroid"
+            url = uri("https://artifact.sovereignsolutions.tech/artifactory/sstracking-android")
+            credentials {
+                username = providers.gradleProperty("artifactory_user").get()
+                password = providers.gradleProperty("artifactory_password").get()
+            }
+        }
+    }
+}
+
