@@ -77,13 +77,62 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.sstrackingdemo"
+    namespace "sovereignsolutions.ssmap.example"
     defaultConfig {
-        applicationId "com.sstrackingdemo"
+        applicationId "sovereignsolutions.ssmap.example"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode 7
         versionName "1.0"
+         /*
+         * Used for:
+         * - Generate token
+         * - Refresh token
+         * - Tracking WorkManager API
+         */
+        buildConfigField(
+            "String",
+            "TRACKING_BASE_URL",
+            "\"https://api-gw.sovereignsolutions.com/\""
+        )
+
+        /*
+         * Used only for:
+         * POST /api/users/login
+         */
+        buildConfigField(
+            "String",
+            "TRACKING_REGISTRATION_BASE_URL",
+            "\"https://testing.intelomatic.com/\""
+        )
+
+        /*
+         * Used by ss BGGeo to push locations.
+         */
+        buildConfigField(
+            "String",
+            "TRACKING_SERVER_URL",
+            "\"https://testing.intelomatic.com/api/app-base/vdms-tracking/push\""
+        )
+
+        buildConfigField(
+            "String",
+            "TRACKING_API_KEY",
+            "\"YOUR_API_KEY\""
+        )
+
+        buildConfigField(
+            "String",
+            "TRACKING_CLIENT_ID",
+            "\"UUMCGD\""
+        )
+
+        buildConfigField(
+            "String",
+            "TRACKING_TENANT_NAME",
+            "\"testing\""
+        )
+    
     }
     signingConfigs {
         debug {
@@ -108,6 +157,13 @@ android {
 }
 
 dependencies {
+
+    // ============================================================
+    // Sovereign Tracking SDK
+    // ============================================================
+
+    implementation "com.sovereignsolutions:tracking-sdk:3.0.4"
+    
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
 
@@ -116,17 +172,4 @@ dependencies {
     } else {
         implementation jscFlavor
     }
-    implementation "com.sovereignsolutions:tracking-sdk:0.0.46"
-
-     implementation("org.maplibre.gl:android-sdk:13.0.1")
-    implementation("com.sovereignsolutions:ssmap-android:0.0.2")
-    implementation 'com.google.android.gms:play-services-location:21.0.1'
-
-
-    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
-
-   
 }

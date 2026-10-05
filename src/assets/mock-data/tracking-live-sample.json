@@ -1,0 +1,3602 @@
+{
+  "result": 0,
+  "status": {
+    "success": true,
+    "message": ""
+  },
+  "data": {
+    "trackers": [
+      {
+        "driver": "surya_n",
+        "trackingInfo": [
+          {
+            "trackerId": "fa80555fa60e94ea@surya_t",
+            "lat": 12.9538108,
+            "lng": 77.7393274,
+            "ts": 1781059499,
+            "speed": 1.95,
+            "heading": 216.76,
+            "device_status": 4,
+            "session": "1781059491",
+            "employee_username": "surya_n",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1781059500,
+            "employee_full_name": "Surya Narayana",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 0,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1773812564,
+            "address": "Brindavan, Dharmarayaswamy Temple Main Road, Ramagondanahalli, White Field, Bengaluru 560066, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1773812564,
+          "address": "Brindavan, Dharmarayaswamy Temple Main Road, Ramagondanahalli, White Field, Bengaluru 560066, India"
+        }
+      },
+      {
+        "driver": "mohan_k",
+        "trackingInfo": [
+          {
+            "trackerId": "b12d62af62abc72e@mohan_event",
+            "lat": 12.9480837,
+            "lng": 77.4828919,
+            "ts": 1779958385,
+            "speed": -1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1779958383",
+            "employee_username": "mohan_k",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1779964513,
+            "employee_full_name": "Mohan Kumar",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 0,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1769684449,
+            "address": "Bangalore North, Bangalore, KARNATAKA, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1769684449,
+          "address": "Bangalore North, Bangalore, KARNATAKA, India"
+        }
+      },
+      {
+        "driver": "tanvi_s",
+        "trackingInfo": [
+          {
+            "trackerId": "b7ce8425ed7c5ac3@truc3",
+            "lat": 26.2527461,
+            "lng": 72.9964833,
+            "ts": 1770031537,
+            "speed": 0.60462797,
+            "heading": 248.57236,
+            "device_status": 4,
+            "session": "1770031174",
+            "employee_username": "tanvi_s",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1770031581,
+            "employee_full_name": "Tanvi Sharma",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN, India",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1770031174,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1770031174,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1770031174,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN, India"
+        }
+      },
+      {
+        "driver": "tarun_j",
+        "trackingInfo": [
+          {
+            "trackerId": "64f08e0c510bbd69@trucindia",
+            "lat": 26.2527559,
+            "lng": 72.9965127,
+            "ts": 1757051937,
+            "speed": -1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "tarun_j",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1757051855,
+            "employee_full_name": "Tarun Joshi",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1756966039,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757069995,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1757069995,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "karan_a",
+        "trackingInfo": [
+          {
+            "trackerId": "83f9e2ef3e9e26aa@ka_fe_check",
+            "lat": 28.61558445804114,
+            "lng": 77.23288055509329,
+            "ts": 1749461057,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1749457060",
+            "employee_username": "karan_a",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1749461119,
+            "employee_full_name": "Karan Agrawal",
+            "address": "Connaught Place, New Delhi, DELHI",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1749457060,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1749457060,
+            "address": "Connaught Place, New Delhi, DELHI"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1749457060,
+          "address": "Connaught Place, New Delhi, DELHI"
+        }
+      },
+      {
+        "driver": "tushar_v",
+        "trackingInfo": [
+          {
+            "trackerId": "9342832109fdac80@trum1",
+            "lat": 12.9345,
+            "lng": 77.625,
+            "ts": 1748589573,
+            "speed": 0,
+            "heading": -1,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "tushar_v",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1748589586,
+            "employee_full_name": "Tushar Verma",
+            "address": "4th Block, Koramangala, Bengaluru, Karnataka 560034",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 0,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1749729893,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1749729893,
+          "address": "4th Block, Koramangala, Bengaluru, Karnataka 560034"
+        }
+      },
+      {
+        "driver": "vikas_p",
+        "trackingInfo": [
+          {
+            "trackerId": "4d05dedc75dce853@vinhtk_testing",
+            "lat": 12.9765357,
+            "lng": 77.6365726,
+            "ts": 1734524697,
+            "speed": -1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1734439723",
+            "employee_username": "vikas_p",
+            "employee_organization_id": 18,
+            "employee_team_id": 58,
+            "employee_type_id": 8,
+            "received": 1734524716,
+            "employee_full_name": "Vikas Patel",
+            "address": "Bangalore North, Bangalore, KARNATAKA",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1734439754,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1734439754,
+            "address": "Bangalore North, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1734439754,
+          "address": "Bangalore North, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "pooja_h",
+        "trackingInfo": [
+          {
+            "trackerId": "948dcfc505a642e4@worker_pjp_2",
+            "lat": 28.652736379535867,
+            "lng": 77.2426000257876,
+            "ts": 1725675402,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1725610007",
+            "employee_username": "pooja_h",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1725675404,
+            "employee_full_name": "Pooja Hegde",
+            "address": "Ghaziabad, Ghaziabad, UTTAR PRADESH",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1725610020,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1725610020,
+            "address": "Ghaziabad, Ghaziabad, UTTAR PRADESH"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1725610020,
+          "address": "Ghaziabad, Ghaziabad, UTTAR PRADESH"
+        }
+      },
+      {
+        "driver": "trisha_s",
+        "trackingInfo": [
+          {
+            "trackerId": "a255aba167d7d4a0@trucdashboard",
+            "lat": 26.2575889,
+            "lng": 73.0091824,
+            "ts": 1717151423,
+            "speed": 0.43394494,
+            "heading": 357.19284,
+            "device_status": 4,
+            "session": "1717041940",
+            "employee_username": "trisha_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1717152653,
+            "employee_full_name": "Trisha Sengupta",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1715936284,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1717041961,
+            "address": "Phường 4, Quận Tân Bình, Thành Phố Hồ Chí Minh"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1717041961,
+          "address": "Phường 4, Quận Tân Bình, Thành Phố Hồ Chí Minh"
+        }
+      },
+      {
+        "driver": "bhim_r",
+        "trackingInfo": [
+          {
+            "trackerId": "6c93fc877bf25e4f@bhimtesting",
+            "lat": 12.9161689,
+            "lng": 77.590378,
+            "ts": 1702890872,
+            "speed": 0,
+            "heading": -1,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "bhim_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1702890900,
+            "employee_full_name": "Bhim Rao",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702877564,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702877564,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1702877564,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "manjari_d",
+        "trackingInfo": [
+          {
+            "trackerId": "73bb01af395f98dd@manjaritesting",
+            "lat": 19.1149582,
+            "lng": 72.9092728,
+            "ts": 1702094535,
+            "speed": 0.16,
+            "heading": 279.65,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "manjari_d",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1702094680,
+            "employee_full_name": "Manjari Devi",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702094584,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702094584,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1702094584,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "rajesh_t",
+        "trackingInfo": [
+          {
+            "trackerId": "f3952ced2cd39244@thawde_test",
+            "lat": 19.1294546,
+            "lng": 72.9322341,
+            "ts": 1701864675,
+            "speed": 2.8302744e-18,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1701856286",
+            "employee_username": "rajesh_t",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1701864708,
+            "employee_full_name": "Rajesh Thawde",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1701856285,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1701856285,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1701856285,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "pradeep_r",
+        "trackingInfo": [
+          {
+            "trackerId": "4ec6bb5db98286c5@pradeeptesting",
+            "lat": 22.7976512,
+            "lng": 75.8589996,
+            "ts": 1701754350,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1701684244",
+            "employee_username": "pradeep_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1701754368,
+            "employee_full_name": "Pradeep Reddy",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1701684239,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1701684239,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1701684239,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "mohan_d",
+        "trackingInfo": [
+          {
+            "trackerId": "e859110815c5eb24@mohan_test12",
+            "lat": 13.0008737,
+            "lng": 75.9032437,
+            "ts": 1780995807,
+            "speed": 0.1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1780986257",
+            "employee_username": "mohan_d",
+            "employee_organization_id": 39,
+            "employee_team_id": 79,
+            "employee_type_id": 0,
+            "received": 1780995898,
+            "employee_full_name": "Mohan Das",
+            "address": "Village House, Alur 573214, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1780995768,
+            "motionActivity": 100,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1780995768,
+            "address": "Village House, Alur 573214, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1780995768,
+          "address": "Village House, Alur 573214, India"
+        }
+      },
+      {
+        "driver": "mohanlal_s",
+        "trackingInfo": [
+          {
+            "trackerId": "fa80555fa60e94ea@mohan_t",
+            "lat": 12.9538105,
+            "lng": 77.7392697,
+            "ts": 1780652450,
+            "speed": 1.62,
+            "heading": 24.99,
+            "device_status": 4,
+            "session": "1780652443",
+            "employee_username": "mohanlal_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1780652454,
+            "employee_full_name": "Mohanlal Sharma",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 0,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1772541142,
+            "address": "Aishwaryanilaya, Bhavani Nagar, Mallathahalli, Bengaluru 560110, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1772541142,
+          "address": "Aishwaryanilaya, Bhavani Nagar, Mallathahalli, Bengaluru 560110, India"
+        }
+      },
+      {
+        "driver": "srinivas_r",
+        "trackingInfo": [
+          {
+            "trackerId": "18b3c8e818c92223@srinivas_test",
+            "lat": 12.9764917,
+            "lng": 77.636795,
+            "ts": 1780054272,
+            "speed": -1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1780023946",
+            "employee_username": "srinivas_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1780107472,
+            "employee_full_name": "Srinivas Rao",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 0,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1769580769,
+            "address": "Slanjekar Path, Bangalore North, Bangalore, KARNATAKA, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1769580769,
+          "address": "Slanjekar Path, Bangalore North, Bangalore, KARNATAKA, India"
+        }
+      },
+      {
+        "driver": "harsh_v",
+        "trackingInfo": [
+          {
+            "trackerId": "d5c89fd91506ba92@huongpda12345",
+            "lat": 28.354390358312898,
+            "lng": 77.31651582545649,
+            "ts": 1773301728,
+            "speed": 13.888889,
+            "heading": 179.41252,
+            "device_status": 4,
+            "session": "1773298548",
+            "employee_username": "harsh_v",
+            "employee_organization_id": 39,
+            "employee_team_id": 79,
+            "employee_type_id": 27,
+            "received": 1773301734,
+            "employee_full_name": "Harsh Vardhan",
+            "address": "Faridabad, Faridabad, HARYANA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1773301726,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1773301726,
+            "address": "Faridabad, Faridabad, HARYANA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1773301726,
+          "address": "Faridabad, Faridabad, HARYANA"
+        }
+      },
+      {
+        "driver": "ananya_i",
+        "trackingInfo": [
+          {
+            "trackerId": "d5c89fd91506ba92@account4",
+            "lat": 25.097906785051915,
+            "lng": 74.58161283284426,
+            "ts": 1771832662,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1770275302",
+            "employee_username": "ananya_i",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1771832769,
+            "employee_full_name": "Ananya Iyer",
+            "address": "Gangrar, Chittaurgarh, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1771833156,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1771833156,
+            "address": "Gangrar, Chittaurgarh, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1771833156,
+          "address": "Gangrar, Chittaurgarh, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "surya_r",
+        "trackingInfo": [
+          {
+            "trackerId": "bece04c78d4840ee@surya_fcm",
+            "lat": 12.9537499,
+            "lng": 77.7393283,
+            "ts": 1771474539,
+            "speed": 0.15408753,
+            "heading": 295.3933,
+            "device_status": 4,
+            "session": "1771408495",
+            "employee_username": "surya_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1771474547,
+            "employee_full_name": "Surya Reddy",
+            "address": "Bangalore East, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1771474537,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1771474537,
+            "address": "Bangalore East, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1771474537,
+          "address": "Bangalore East, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "aditya_n",
+        "trackingInfo": [
+          {
+            "trackerId": "d5c89fd91506ba92@account2",
+            "lat": 28.622999960177935,
+            "lng": 77.21799999475479,
+            "ts": 1770188300,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1770180938",
+            "employee_username": "aditya_n",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1770188337,
+            "employee_full_name": "Aditya Nair",
+            "address": "Parliament Street, New Delhi, DELHI, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1770188618,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1770188618,
+            "address": "Parliament Street, New Delhi, DELHI, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1770188618,
+          "address": "Parliament Street, New Delhi, DELHI, India"
+        }
+      },
+      {
+        "driver": "tejaswini_k",
+        "trackingInfo": [
+          {
+            "trackerId": "6431b03cfb994bec@truc",
+            "lat": 26.2527764,
+            "lng": 72.9965898,
+            "ts": 1769503283,
+            "speed": 0.023560373,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1769503274",
+            "employee_username": "tejaswini_k",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1769503293,
+            "employee_full_name": "Tejaswini Kulkarni",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1769503309,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1769503309,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1769503309,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN, India"
+        }
+      },
+      {
+        "driver": "mohan_krishna",
+        "trackingInfo": [
+          {
+            "trackerId": "53cdeb9e93017d05@mohan_report",
+            "lat": 12.9766056,
+            "lng": 77.6366386,
+            "ts": 1768201293,
+            "speed": 0.9336269,
+            "heading": 37.430622,
+            "device_status": 4,
+            "session": "1768196360",
+            "employee_username": "mohan_krishna",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1768201293,
+            "employee_full_name": "Mohan Krishna",
+            "address": "Bangalore North, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1768201714,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1768201714,
+            "address": "Bangalore North, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1768201714,
+          "address": "Bangalore North, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "tanmay_b",
+        "trackingInfo": [
+          {
+            "trackerId": "b7ce8425ed7c5ac3@truc2",
+            "lat": 26.2527681,
+            "lng": 72.9964996,
+            "ts": 1767595458,
+            "speed": 0.23,
+            "heading": 56.62,
+            "device_status": 4,
+            "session": "1767595451",
+            "employee_username": "tanmay_b",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1767595478,
+            "employee_full_name": "Tanmay Bhat",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1767595468,
+            "motionActivity": 100,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1767595468,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1767595468,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "manoj_n",
+        "trackingInfo": [
+          {
+            "trackerId": "e859110815c5eb24@mohan_rn",
+            "lat": 13.0008699,
+            "lng": 75.9031744,
+            "ts": 1767241000,
+            "speed": 1.42,
+            "heading": 199,
+            "device_status": 4,
+            "session": "1767231458",
+            "employee_username": "manoj_n",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1767241031,
+            "employee_full_name": "Manoj Nambiar",
+            "address": "Alur, Hassan, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1767241122,
+            "motionActivity": 32,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1767241122,
+            "address": "Alur, Hassan, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1767241122,
+          "address": "Alur, Hassan, KARNATAKA"
+        }
+      },
+      {
+        "driver": "arjun_m",
+        "trackingInfo": [
+          {
+            "trackerId": "b7ce8425ed7c5ac3@account7",
+            "lat": 26.2527739,
+            "lng": 72.9965468,
+            "ts": 1766554980,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1766487512",
+            "employee_username": "arjun_m",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1766555046,
+            "employee_full_name": "Arjun Mehra",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1766555030,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1766555030,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1766555030,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "anil_d",
+        "trackingInfo": [
+          {
+            "trackerId": "a2ebb41a7d6483c3@account10",
+            "lat": 26.2526164,
+            "lng": 72.9966894,
+            "ts": 1766063449,
+            "speed": 0.43381968,
+            "heading": 104.66361,
+            "device_status": 4,
+            "session": "1766063357",
+            "employee_username": "anil_d",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1766063457,
+            "employee_full_name": "Anil Deshmukh",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1766063596,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1766063596,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1766063596,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "aakash_g",
+        "trackingInfo": [
+          {
+            "trackerId": "a2ebb41a7d6483c3@account9",
+            "lat": 26.2526641,
+            "lng": 72.9966449,
+            "ts": 1766062723,
+            "speed": 1.3822366,
+            "heading": 265.5785,
+            "device_status": 4,
+            "session": "1766062700",
+            "employee_username": "aakash_g",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1766062782,
+            "employee_full_name": "Aakash Gupta",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1766062846,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1766062846,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1766062846,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "tina_j",
+        "trackingInfo": [
+          {
+            "trackerId": "b7ce8425ed7c5ac3@truc_reportingmanager",
+            "lat": 26.2527782,
+            "lng": 72.9965262,
+            "ts": 1765868837,
+            "speed": 0.2284333,
+            "heading": 60.838097,
+            "device_status": 4,
+            "session": "1765800578",
+            "employee_username": "tina_j",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1765868839,
+            "employee_full_name": "Tina Joseph",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1765796392,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1765799410,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1765799410,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "divya_s",
+        "trackingInfo": [
+          {
+            "trackerId": "722b386be0a25e45@duynba_fevn",
+            "lat": 13.091523378893607,
+            "lng": 77.77982678314731,
+            "ts": 1764665554,
+            "speed": 13.89,
+            "heading": 336.39,
+            "device_status": 4,
+            "session": "1764662426",
+            "employee_username": "divya_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1764665559,
+            "employee_full_name": "Divya Swaminathan",
+            "address": "Hosakote, Bangalore Rural, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1764665551,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1764665551,
+            "address": "Hosakote, Bangalore Rural, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1764665551,
+          "address": "Hosakote, Bangalore Rural, KARNATAKA"
+        }
+      },
+      {
+        "driver": "uday_s",
+        "trackingInfo": [
+          {
+            "trackerId": "aa82f52055a58137@unique1",
+            "lat": 28.67375564394946,
+            "lng": 76.88620039610635,
+            "ts": 1764642538,
+            "speed": 13.888889,
+            "heading": 254.18755,
+            "device_status": 4,
+            "session": "1764641875",
+            "employee_username": "uday_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1764642545,
+            "employee_full_name": "Uday Shankar",
+            "address": "Bahadurgarh, Jhajjar, HARYANA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1764642531,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1764642531,
+            "address": "Bahadurgarh, Jhajjar, HARYANA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1764642531,
+          "address": "Bahadurgarh, Jhajjar, HARYANA"
+        }
+      },
+      {
+        "driver": "mahesh_b",
+        "trackingInfo": [
+          {
+            "trackerId": "564896a0e4485b6e@test_mohan",
+            "lat": 13.0008657,
+            "lng": 75.9032006,
+            "ts": 1763486969,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1763484739",
+            "employee_username": "mahesh_b",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1763487057,
+            "employee_full_name": "Mahesh Bhatt",
+            "address": "Alur, Hassan, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1763487053,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1763487053,
+            "address": "Alur, Hassan, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1763487053,
+          "address": "Alur, Hassan, KARNATAKA"
+        }
+      },
+      {
+        "driver": "abhishek_p",
+        "trackingInfo": [
+          {
+            "trackerId": "d5c89fd91506ba92@accountboth",
+            "lat": 21.303000143223663,
+            "lng": 70.40899984538555,
+            "ts": 1762833255,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1762833252",
+            "employee_username": "abhishek_p",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1762833258,
+            "employee_full_name": "Abhishek Pandey",
+            "address": "Mendarda, Junagadh, GUJARAT",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1762833402,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1762833402,
+            "address": "Mendarda, Junagadh, GUJARAT"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1762833402,
+          "address": "Mendarda, Junagadh, GUJARAT"
+        }
+      },
+      {
+        "driver": "uma_m",
+        "trackingInfo": [
+          {
+            "trackerId": "2EDEBF2F-CD67-4F89-B525-35C208B16587@unique2",
+            "lat": 26.2527976300623,
+            "lng": 72.99677183969963,
+            "ts": 1759731551,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1759731388",
+            "employee_username": "uma_m",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1759731552,
+            "employee_full_name": "Uma Maheshwari",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1759731572,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1759731572,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1759731572,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "naveen_c",
+        "trackingInfo": [
+          {
+            "trackerId": "d5c89fd91506ba92@new01",
+            "lat": 20.503021208665718,
+            "lng": 79.09875959157944,
+            "ts": 1758010723,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1757998031",
+            "employee_username": "naveen_c",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1758010725,
+            "employee_full_name": "Naveen Choudhary",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 0,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757990503,
+            "address": "Phường 4, Quận Tân Bình, Thành Phố Hồ Chí Minh"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1757990503,
+          "address": "Phường 4, Quận Tân Bình, Thành Phố Hồ Chí Minh"
+        }
+      },
+      {
+        "driver": "manish_m",
+        "trackingInfo": [
+          {
+            "trackerId": "e7de7bb931df1179@mohan_fe1",
+            "lat": 12.9566967,
+            "lng": 77.4882017,
+            "ts": 1757079730,
+            "speed": 0.85135055,
+            "heading": 309,
+            "device_status": 4,
+            "session": "1757066524",
+            "employee_username": "manish_m",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1757079759,
+            "employee_full_name": "Manish Malhotra",
+            "address": "Bangalore North, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757079746,
+            "motionActivity": 32,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757079746,
+            "address": "Bangalore North, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1757079746,
+          "address": "Bangalore North, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "tara_m",
+        "trackingInfo": [
+          {
+            "trackerId": "64f08e0c510bbd69@truc2_reportingmanager",
+            "lat": 26.2527904,
+            "lng": 72.9964447,
+            "ts": 1752488843,
+            "speed": 0.016119808,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1752047313",
+            "employee_username": "tara_m",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1752489136,
+            "employee_full_name": "Tara Menon",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1752489138,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1752489138,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1752489138,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "tariq_a",
+        "trackingInfo": [
+          {
+            "trackerId": "b7ce8425ed7c5ac3@trum",
+            "lat": 26.2646075,
+            "lng": 72.9846246,
+            "ts": 1750417655,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1750405734",
+            "employee_username": "tariq_a",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1750417772,
+            "employee_full_name": "Tariq Ali",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1750417939,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1750417939,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1750417939,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "surya_p",
+        "trackingInfo": [
+          {
+            "trackerId": "5f10577a7f08548d@surya_test",
+            "lat": 12.9563242,
+            "lng": 77.7328261,
+            "ts": 1748339292,
+            "speed": 1.1791586,
+            "heading": 302.5854,
+            "device_status": 4,
+            "session": "1748338199",
+            "employee_username": "surya_p",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1748339488,
+            "employee_full_name": "Surya Prakash",
+            "address": "Bangalore East, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1748339603,
+            "motionActivity": 1,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1748339603,
+            "address": "Bangalore East, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1748339603,
+          "address": "Bangalore East, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "amitabh_s",
+        "trackingInfo": [
+          {
+            "trackerId": "aa82f52055a58137@account22",
+            "lat": 16.791465011077953,
+            "lng": 75.73657613936697,
+            "ts": 1745466024,
+            "speed": 69.44444,
+            "heading": 159.84386,
+            "device_status": 4,
+            "session": "1745465966",
+            "employee_username": "amitabh_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1745466026,
+            "employee_full_name": "Amitabh Sen",
+            "address": "Bijapur, Bijapur, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1745466022,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1745466022,
+            "address": "Bijapur, Bijapur, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1745466022,
+          "address": "Bijapur, Bijapur, KARNATAKA"
+        }
+      },
+      {
+        "driver": "hitesh_g",
+        "trackingInfo": [
+          {
+            "trackerId": "b583202bdb67ef0c@testing_workerhuong",
+            "lat": 25.489584278788307,
+            "lng": 81.02478655506603,
+            "ts": 1744368766,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1745546180",
+            "employee_username": "hitesh_g",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1745834581,
+            "employee_full_name": "Hitesh Goswami",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 0,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1714122671,
+            "address": "Phường 4, Quận Tân Bình, Thành Phố Hồ Chí Minh"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1714122671,
+          "address": "Phường 4, Quận Tân Bình, Thành Phố Hồ Chí Minh"
+        }
+      },
+      {
+        "driver": "rohit_c",
+        "trackingInfo": [
+          {
+            "trackerId": "c1e865ad5952355c@report_mg_testing",
+            "lat": 26.2576747,
+            "lng": 73.0093242,
+            "ts": 1743662439,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1742299497",
+            "employee_username": "rohit_c",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1743662461,
+            "employee_full_name": "Rohit Chawla",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1743662455,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1743662455,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1743662455,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "mukesh_s",
+        "trackingInfo": [
+          {
+            "trackerId": "670042fe41e65060@mohan_test_manager",
+            "lat": 26.2576728,
+            "lng": 73.0092857,
+            "ts": 1741252447,
+            "speed": 0,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1741252426",
+            "employee_username": "mukesh_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1741252460,
+            "employee_full_name": "Mukesh Sharma",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1741252470,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1741252470,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1741252470,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "kavita_a",
+        "trackingInfo": [
+          {
+            "trackerId": "948dcfc505a642e4@ka_fe",
+            "lat": 12.9719,
+            "lng": 77.6412,
+            "ts": 1740560263,
+            "speed": -1,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1740560250",
+            "employee_username": "kavita_a",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1740560268,
+            "employee_full_name": "Kavita Acharya",
+            "address": "100 Feet Rd, Indiranagar, Bengaluru, Karnataka 560038",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740560924,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740560924,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1740560924,
+          "address": "100 Feet Rd, Indiranagar, Bengaluru, Karnataka 560038"
+        }
+      },
+      {
+        "driver": "kailash_k",
+        "trackingInfo": [
+          {
+            "trackerId": "948dcfc505a642e4@ka_test_db",
+            "lat": 12.8452,
+            "lng": 77.6602,
+            "ts": 1740555040,
+            "speed": -1,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1740541640",
+            "employee_username": "kailash_k",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1740556422,
+            "employee_full_name": "Kailash Kher",
+            "address": "Phase 1, Electronic City, Bengaluru, Karnataka 560100",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740556411,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740556411,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1740556411,
+          "address": "Phase 1, Electronic City, Bengaluru, Karnataka 560100"
+        }
+      },
+      {
+        "driver": "kunal_k",
+        "trackingInfo": [
+          {
+            "trackerId": "948dcfc505a642e4@ka_reporting",
+            "lat": 12.9121,
+            "lng": 77.6446,
+            "ts": 1740452816,
+            "speed": -1,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1740452794",
+            "employee_username": "kunal_k",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1740452821,
+            "employee_full_name": "Kunal Kapoor",
+            "address": "Sector 2, HSR Layout, Bengaluru, Karnataka 560102",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740456300,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740456300,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1740456300,
+          "address": "Sector 2, HSR Layout, Bengaluru, Karnataka 560102"
+        }
+      },
+      {
+        "driver": "karthik_s",
+        "trackingInfo": [
+          {
+            "trackerId": "948dcfc505a642e4@ka_fe_db",
+            "lat": 13.0358,
+            "lng": 77.597,
+            "ts": 1740388425,
+            "speed": -1,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1740388405",
+            "employee_username": "karthik_s",
+            "employee_organization_id": 18,
+            "employee_team_id": 81,
+            "employee_type_id": 0,
+            "received": 1740388427,
+            "employee_full_name": "Karthik Subramanian",
+            "address": "Outer Ring Rd, Hebbal, Bengaluru, Karnataka 560024",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740388645,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740388645,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1740388645,
+          "address": "Outer Ring Rd, Hebbal, Bengaluru, Karnataka 560024"
+        }
+      },
+      {
+        "driver": "tapan_s",
+        "trackingInfo": [
+          {
+            "trackerId": "47200fc7f0cd8e63@tom3",
+            "lat": 26.2691792,
+            "lng": 72.9742004,
+            "ts": 1740064255,
+            "speed": 0.5280272,
+            "heading": 357.50348,
+            "device_status": 4,
+            "session": "1738843938",
+            "employee_username": "tapan_s",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 0,
+            "received": 1740064258,
+            "employee_full_name": "Tapan Sen",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740064277,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1740064277,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1740064277,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "mayank_a",
+        "trackingInfo": [
+          {
+            "trackerId": "e7de7bb931df1179@mohantest2",
+            "lat": 12.9566067,
+            "lng": 77.4881367,
+            "ts": 1739608755,
+            "speed": 0,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1739608425",
+            "employee_username": "mayank_a",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1739608757,
+            "employee_full_name": "Mayank Agarwal",
+            "address": "Bangalore North, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1739609611,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1739609611,
+            "address": "Bangalore North, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1739609611,
+          "address": "Bangalore North, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "deepak_c",
+        "trackingInfo": [
+          {
+            "trackerId": "722b386be0a25e45@duynba_sale",
+            "lat": 28.60532053311339,
+            "lng": 77.19854543760354,
+            "ts": 1739417098,
+            "speed": 0.67,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1739415761",
+            "employee_username": "deepak_c",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1739417106,
+            "employee_full_name": "Deepak Chopra",
+            "address": "Chanakya Puri, New Delhi, DELHI",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1739417099,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1739417099,
+            "address": "Chanakya Puri, New Delhi, DELHI"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1739417099,
+          "address": "Chanakya Puri, New Delhi, DELHI"
+        }
+      },
+      {
+        "driver": "thomas_g",
+        "trackingInfo": [
+          {
+            "trackerId": "47200fc7f0cd8e63@tom2",
+            "lat": 26.2576853,
+            "lng": 73.0092573,
+            "ts": 1738843705,
+            "speed": 0.12,
+            "heading": 187.5,
+            "device_status": 4,
+            "session": "1738842051",
+            "employee_username": "thomas_g",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 0,
+            "received": 1738843708,
+            "employee_full_name": "Thomas George",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1738843725,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1742362492,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1742362492,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "suresh_r",
+        "trackingInfo": [
+          {
+            "trackerId": "47200fc7f0cd8e63@surya_18",
+            "lat": 26.2576811,
+            "lng": 73.0093057,
+            "ts": 1738575185,
+            "speed": 0.15,
+            "heading": 307.94,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "suresh_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 12,
+            "received": 1738575207,
+            "employee_full_name": "Suresh Raina",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1738575277,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1738575277,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1738575277,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "pranab_m",
+        "trackingInfo": [
+          {
+            "trackerId": "e7de7bb931df1179@prod_test18",
+            "lat": 12.95669,
+            "lng": 77.4881633,
+            "ts": 1737183430,
+            "speed": 0,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1737182745",
+            "employee_username": "pranab_m",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1737183432,
+            "employee_full_name": "Pranab Mukherjee",
+            "address": "Bangalore North, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1737184341,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1737184341,
+            "address": "Bangalore North, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1737184341,
+          "address": "Bangalore North, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "suprio_b",
+        "trackingInfo": [
+          {
+            "trackerId": "81fa9277a3f25147@suprio_test",
+            "lat": 12.9766067,
+            "lng": 77.6366383,
+            "ts": 1734094780,
+            "speed": -1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1734089407",
+            "employee_username": "suprio_b",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1734094786,
+            "employee_full_name": "Suprio Bose",
+            "address": "Bangalore North, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1734094915,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1734094915,
+            "address": "Bangalore North, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1734094915,
+          "address": "Bangalore North, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "venkat_r",
+        "trackingInfo": [
+          {
+            "trackerId": "0fec0f4fe42da191@venkat_raju",
+            "lat": 12.9462859,
+            "lng": 77.7218663,
+            "ts": 1731681828,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1731662008",
+            "employee_username": "venkat_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1731681929,
+            "employee_full_name": "Venkat Raju",
+            "address": "Bangalore East, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1731681939,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1731681939,
+            "address": "Bangalore East, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1731681939,
+          "address": "Bangalore East, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "madhavan_p",
+        "trackingInfo": [
+          {
+            "trackerId": "670042fe41e65060@undefined",
+            "lat": 26.2577006,
+            "lng": 73.009318,
+            "ts": 1731658138,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1731658087",
+            "employee_username": "madhavan_p",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1731658159,
+            "employee_full_name": "Madhavan Pillai",
+            "address": "Vcreate Events, Shree Kewalraj Singhvi Marg, Shastri Nagar, Jodhpur 342003, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1726724623,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1726724623,
+            "address": "Vcreate Events, Shree Kewalraj Singhvi Marg, Shastri Nagar, Jodhpur 342003, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1726724623,
+          "address": "Vcreate Events, Shree Kewalraj Singhvi Marg, Shastri Nagar, Jodhpur 342003, India"
+        }
+      },
+      {
+        "driver": "chitra_b",
+        "trackingInfo": [
+          {
+            "trackerId": "c1e865ad5952355c@cuc_testing",
+            "lat": 26.2577153,
+            "lng": 73.00935,
+            "ts": 1731397294,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1725612655",
+            "employee_username": "chitra_b",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1731397309,
+            "employee_full_name": "Chitra Banerjee",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1731397316,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1731397316,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1731397316,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "siddharth_r",
+        "trackingInfo": [
+          {
+            "trackerId": "e7de7bb931df1179@staging_fe1_14oct2024",
+            "lat": 12.956665,
+            "lng": 77.48819,
+            "ts": 1729063599,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1729063250",
+            "employee_username": "siddharth_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1729063640,
+            "employee_full_name": "Siddharth Roy",
+            "address": "Aishwaryanilaya, Bhavani Nagar, Mallathahalli, Bengaluru 560110, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1729063874,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1729063874,
+            "address": "Aishwaryanilaya, Bhavani Nagar, Mallathahalli, Bengaluru 560110, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1729063874,
+          "address": "Aishwaryanilaya, Bhavani Nagar, Mallathahalli, Bengaluru 560110, India"
+        }
+      },
+      {
+        "driver": "ravi_p",
+        "trackingInfo": [
+          {
+            "trackerId": "670042fe41e65060@rpmi",
+            "lat": 26.2577022,
+            "lng": 73.0093472,
+            "ts": 1728898887,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1728898879",
+            "employee_username": "ravi_p",
+            "employee_organization_id": 26,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1728898899,
+            "employee_full_name": "Ravi Pratap",
+            "address": "Vcreate Events, Shree Kewalraj Singhvi Marg, Shastri Nagar, Jodhpur 342003, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1728898938,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1728898938,
+            "address": "Vcreate Events, Shree Kewalraj Singhvi Marg, Shastri Nagar, Jodhpur 342003, India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1728898938,
+          "address": "Vcreate Events, Shree Kewalraj Singhvi Marg, Shastri Nagar, Jodhpur 342003, India"
+        }
+      },
+      {
+        "driver": "kishore_k",
+        "trackingInfo": [
+          {
+            "trackerId": "e7de7bb931df1179@kishor",
+            "lat": 12.9567515,
+            "lng": 77.4881637,
+            "ts": 1726145762,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1726137471",
+            "employee_username": "kishore_k",
+            "employee_organization_id": 26,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1726145835,
+            "employee_full_name": "Kishore Kumar",
+            "address": "Bangalore North, Bangalore, KARNATAKA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1726145845,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1726145845,
+            "address": "Bangalore North, Bangalore, KARNATAKA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1726145845,
+          "address": "Bangalore North, Bangalore, KARNATAKA"
+        }
+      },
+      {
+        "driver": "praveen_t",
+        "trackingInfo": [
+          {
+            "trackerId": "948dcfc505a642e4@worker_pjp_3",
+            "lat": 28.67042058718453,
+            "lng": 77.38134702784933,
+            "ts": 1725609988,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1725590586",
+            "employee_username": "praveen_t",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1725609989,
+            "employee_full_name": "Praveen Tiwari",
+            "address": "Ghaziabad, Ghaziabad, UTTAR PRADESH",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1725609992,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1725609992,
+            "address": "Ghaziabad, Ghaziabad, UTTAR PRADESH"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1725609992,
+          "address": "Ghaziabad, Ghaziabad, UTTAR PRADESH"
+        }
+      },
+      {
+        "driver": "tripti_d",
+        "trackingInfo": [
+          {
+            "trackerId": "aa82f52055a58137@trucvisit",
+            "lat": 28.640397080618403,
+            "lng": 77.24593687802553,
+            "ts": 1725607378,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1725604952",
+            "employee_username": "tripti_d",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1725607377,
+            "employee_full_name": "Tripti Dimri",
+            "address": "Darya Ganj, Central, DELHI",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1725607447,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1725607447,
+            "address": "Darya Ganj, Central, DELHI"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1725607447,
+          "address": "Darya Ganj, Central, DELHI"
+        }
+      },
+      {
+        "driver": "tulsi_d",
+        "trackingInfo": [
+          {
+            "trackerId": "aa82f52055a58137@truc1",
+            "lat": 28.63063063063063,
+            "lng": 77.24703299962576,
+            "ts": 1724727778,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1718953976",
+            "employee_username": "tulsi_d",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1724727780,
+            "employee_full_name": "Tulsi Das",
+            "address": "Darya Ganj, Central, DELHI",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1724727780,
+            "motionActivity": 8,
+            "employee_status": 4,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1724727780,
+            "address": "Darya Ganj, Central, DELHI"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1724727780,
+          "address": "Darya Ganj, Central, DELHI"
+        }
+      },
+      {
+        "driver": "pankaj_t",
+        "trackingInfo": [
+          {
+            "trackerId": "948dcfc505a642e4@worker_pjp_1",
+            "lat": 28.6379,
+            "lng": 77.18102,
+            "ts": 1724656856,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1724399365",
+            "employee_username": "pankaj_t",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1724656858,
+            "employee_full_name": "Pankaj Tripathi",
+            "address": "Karol Bagh, Central, DELHI",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1724656861,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1724656861,
+            "address": "Karol Bagh, Central, DELHI"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1724656861,
+          "address": "Karol Bagh, Central, DELHI"
+        }
+      },
+      {
+        "driver": "dev_k",
+        "trackingInfo": [
+          {
+            "trackerId": "6e314b934bbd7d34@dev_kishor1",
+            "lat": 26.2576695,
+            "lng": 73.0093343,
+            "ts": 1722241937,
+            "speed": 0.000705093,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1722241932",
+            "employee_username": "dev_k",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1722242306,
+            "employee_full_name": "Dev Kishore",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1722242309,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1722242309,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1722242309,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "tejashwi_y",
+        "trackingInfo": [
+          {
+            "trackerId": "aa82f52055a58137@trucmanager2_testing",
+            "lat": 24.819553,
+            "lng": 77.713383,
+            "ts": 1721117119,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1721116823",
+            "employee_username": "tejashwi_y",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1721117136,
+            "employee_full_name": "Tejashwi Yadav",
+            "address": "Isagarh, Ashoknagar, MADHYA PRADESH",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1721117135,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1721117135,
+            "address": "Isagarh, Ashoknagar, MADHYA PRADESH"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1721117135,
+          "address": "Isagarh, Ashoknagar, MADHYA PRADESH"
+        }
+      },
+      {
+        "driver": "urvashi_r",
+        "trackingInfo": [
+          {
+            "trackerId": "e328c19a36f06955@user_tea",
+            "lat": 26.257677,
+            "lng": 73.0093584,
+            "ts": 1718877793,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1718870105",
+            "employee_username": "urvashi_r",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 0,
+            "received": 1718879427,
+            "employee_full_name": "Urvashi Rautela",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1718879427,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1718879427,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1718879427,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "tanushree_d",
+        "trackingInfo": [
+          {
+            "trackerId": "a255aba167d7d4a0@trucbranching",
+            "lat": 26.2578562,
+            "lng": 73.0093687,
+            "ts": 1717759875,
+            "speed": 0.3404512,
+            "heading": 37.813225,
+            "device_status": 4,
+            "session": "1717739361",
+            "employee_username": "tanushree_d",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1717759954,
+            "employee_full_name": "Tanushree Dutta",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1717759954,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1717759954,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1717759954,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "preeti_z",
+        "trackingInfo": [
+          {
+            "trackerId": "a255aba167d7d4a0@phuong",
+            "lat": 26.2577287,
+            "lng": 73.0093807,
+            "ts": 1716376004,
+            "speed": 0.143669,
+            "heading": 338.2728,
+            "device_status": 4,
+            "session": "1716352085",
+            "employee_username": "preeti_z",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 12,
+            "received": 1716377452,
+            "employee_full_name": "Preeti Zinta",
+            "address": "Jodhpur, Jodhpur, RAJASTHAN",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1716377451,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1716377451,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1716377451,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      },
+      {
+        "driver": "tarun_k",
+        "trackingInfo": [
+          {
+            "trackerId": "71c1d4d85dbc053d@tequity_fe",
+            "lat": 13.0031,
+            "lng": 77.5714,
+            "ts": 1716368647,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1716368634",
+            "employee_username": "tarun_k",
+            "employee_organization_id": 40,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1716368671,
+            "employee_full_name": "Tarun Khanna",
+            "address": "8th Cross, Malleshwaram, Bengaluru, Karnataka 560003",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1716368669,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1716368669,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1716368669,
+          "address": "8th Cross, Malleshwaram, Bengaluru, Karnataka 560003"
+        }
+      },
+      {
+        "driver": "omkar_n",
+        "trackingInfo": [
+          {
+            "trackerId": "aa82f52055a58137@test_odometer",
+            "lat": 19.012529373168945,
+            "lng": 72.85456085205078,
+            "ts": 1706684114,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1706673657",
+            "employee_username": "omkar_n",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1706684127,
+            "employee_full_name": "Omkar Nath",
+            "address": "Greater Mumbai, Mumbai, MAHARASHTRA",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1706684353,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1706684353,
+            "address": "Greater Mumbai, Mumbai, MAHARASHTRA"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1706684353,
+          "address": "Greater Mumbai, Mumbai, MAHARASHTRA"
+        }
+      },
+      {
+        "driver": "gaurav_k",
+        "trackingInfo": [
+          {
+            "trackerId": "1b76bc1672d8bde4@giang_test_tracking_1",
+            "lat": 27.17429,
+            "lng": 81.215765,
+            "ts": 1706581771,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1706519552",
+            "employee_username": "gaurav_k",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 39,
+            "received": 1706588633,
+            "employee_full_name": "Gaurav Kapur",
+            "address": "Fatehpur, Bara Banki, UTTAR PRADESH",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1706588648,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1706588648,
+            "address": "Fatehpur, Bara Banki, UTTAR PRADESH"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1706588648,
+          "address": "Fatehpur, Bara Banki, UTTAR PRADESH"
+        }
+      },
+      {
+        "driver": "raghavendra_p",
+        "trackingInfo": [
+          {
+            "trackerId": "415575416191c845@rptesting",
+            "lat": 24.339165,
+            "lng": 88.1139224,
+            "ts": 1703850849,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1703850852",
+            "employee_username": "raghavendra_p",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1703850885,
+            "employee_full_name": "Raghavendra Prasad",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1703850937,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1703850937,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1703850937,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "yogesh_s",
+        "trackingInfo": [
+          {
+            "trackerId": "3cd6c3d1b0102399@yogitesting",
+            "lat": 13.0087919,
+            "lng": 77.7001349,
+            "ts": 1702346816,
+            "speed": -1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "yogesh_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1702346836,
+            "employee_full_name": "Yogesh Sharma",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702303481,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702303481,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1702303481,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "jitendra_k",
+        "trackingInfo": [
+          {
+            "trackerId": "d81df8be68e66b71@jtesting",
+            "lat": 19.1701754,
+            "lng": 72.8601975,
+            "ts": 1702283150,
+            "speed": 0.03,
+            "heading": -1,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "jitendra_k",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1702283173,
+            "employee_full_name": "Jitendra Kumar",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702285788,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702285788,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1702285788,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "amey_w",
+        "trackingInfo": [
+          {
+            "trackerId": "4a33e6ab0dbbd7aa@ameytesting",
+            "lat": 19.4053789,
+            "lng": 72.8321184,
+            "ts": 1702097270,
+            "speed": -1,
+            "heading": -1,
+            "device_status": 4,
+            "session": "0",
+            "employee_username": "amey_w",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1702230858,
+            "employee_full_name": "Amey Wagh",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702472452,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1702472452,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1702472452,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "srinivas_m",
+        "trackingInfo": [
+          {
+            "trackerId": "F8D2CD90-A795-4525-8F16-A5A7F0E345D8@srinivas_test1",
+            "lat": 12.959815540503756,
+            "lng": 77.76376361119992,
+            "ts": 1756983342,
+            "speed": 0,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1756890172",
+            "employee_username": "srinivas_m",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1756983343,
+            "employee_full_name": "Srinivas Murthy",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757578190,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757578190,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1757578190,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "bhavana_m",
+        "trackingInfo": [
+          {
+            "trackerId": "64f08e0c510bbd69@worker_bothrole2",
+            "lat": 26.2526714,
+            "lng": 72.9966012,
+            "ts": 1752218551,
+            "speed": 1.34,
+            "heading": 320,
+            "device_status": 4,
+            "session": "1752047476",
+            "employee_username": "bhavana_m",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1752218553,
+            "employee_full_name": "Bhavana Menon",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757578202,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757578202,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1757578202,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "tushar_k",
+        "trackingInfo": [
+          {
+            "trackerId": "d5c89fd91506ba92@test21",
+            "lat": 17.204459519437453,
+            "lng": 78.476046612143,
+            "ts": 1744599689,
+            "speed": 13.888889,
+            "heading": 1.1182309,
+            "device_status": 4,
+            "session": "1744599111",
+            "employee_username": "tushar_k",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1744599746,
+            "employee_full_name": "Tushar Kapoor",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1744599670,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1744599670,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1744599670,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "brijesh_m",
+        "trackingInfo": [
+          {
+            "trackerId": "43069AB7-800E-4808-B76B-34D288B84BD8@belong_reportingmanager",
+            "lat": 26.257614589682916,
+            "lng": 73.00916572744572,
+            "ts": 1742475404,
+            "speed": 1.3613696,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1742474964",
+            "employee_username": "brijesh_m",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 24,
+            "received": 1742475406,
+            "employee_full_name": "Brijesh Mishra",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1743482612,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": false
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1743482612,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1743482612,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "madhu_s",
+        "trackingInfo": [
+          {
+            "trackerId": "5f10577a7f08548d@mohan_expense_1",
+            "lat": 12.9763417,
+            "lng": 77.636836,
+            "ts": 1742382007,
+            "speed": 0.08763169,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1742378084",
+            "employee_username": "madhu_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1742382309,
+            "employee_full_name": "Madhu Sudan",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1744025564,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1744025564,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1744025564,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "tanuj_v",
+        "trackingInfo": [
+          {
+            "trackerId": "47200fc7f0cd8e63@tom4",
+            "lat": 26.257662,
+            "lng": 73.0093191,
+            "ts": 1737100040,
+            "speed": 0.06,
+            "heading": -1,
+            "device_status": 4,
+            "session": "1737030003",
+            "employee_username": "tanuj_v",
+            "employee_organization_id": 26,
+            "employee_team_id": 63,
+            "employee_type_id": 0,
+            "received": 1737100049,
+            "employee_full_name": "Tanuj Virwani",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1744637036,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1744637036,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1744637036,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "balaji_s",
+        "trackingInfo": [
+          {
+            "trackerId": "d740ca0503da54c9@balaji",
+            "lat": 12.9554286,
+            "lng": 77.7075009,
+            "ts": 1732430388,
+            "speed": 0.32012224,
+            "heading": 59.930115,
+            "device_status": 4,
+            "session": "1731655255",
+            "employee_username": "balaji_s",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1732433282,
+            "employee_full_name": "Balaji Srinivasan",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1749814915,
+            "motionActivity": 8,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1749814915,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1749814915,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "eshwar_c",
+        "trackingInfo": [
+          {
+            "trackerId": "e7de7bb931df1179@expense_test",
+            "lat": 12.9712741,
+            "lng": 77.6132374,
+            "ts": 1724241450,
+            "speed": 0.01823772,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1724237344",
+            "employee_username": "eshwar_c",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1724241452,
+            "employee_full_name": "Eshwar Chandra",
+            "address": "Whitefield Main Rd, Bengaluru, Karnataka, India",
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757655031,
+            "motionActivity": 32,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "force_off_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1757655031,
+            "address": ""
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "force_off_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1757655031,
+          "address": "Whitefield Main Rd, Bengaluru, Karnataka, India"
+        }
+      },
+      {
+        "driver": "ashwin_r",
+        "trackingInfo": [
+          {
+            "trackerId": "5c2a64573da89759@account8",
+            "lat": 26.2526164,
+            "lng": 72.9965552,
+            "ts": 1766064580,
+            "speed": 3.6299684e-16,
+            "heading": 0,
+            "device_status": 4,
+            "session": "1766060940",
+            "employee_username": "ashwin_r",
+            "employee_organization_id": 0,
+            "employee_team_id": 0,
+            "employee_type_id": 0,
+            "received": 1766064583,
+            "employee_full_name": "Ashwin Ravichandran",
+            "address": "India",
+            "action_code": "collected",
+            "typeCode": "COLLECTION_STATUS",
+            "event_ts": 1769568980,
+            "motionActivity": 0,
+            "employee_status": 3,
+            "isActive": true
+          }
+        ],
+        "latest_events": {
+          "DUTY": {
+            "action_code": "on_duty",
+            "typeCode": "DUTY",
+            "event_ts": 1766060940,
+            "address": "Jodhpur, Jodhpur, RAJASTHAN"
+          },
+          "COLLECTION_STATUS": {
+            "action_code": "collected",
+            "typeCode": "COLLECTION_STATUS",
+            "event_ts": 1769568980,
+            "address": "India"
+          }
+        },
+        "latest_duty_event": {
+          "action_code": "on_duty",
+          "typeCode": "DUTY",
+          "event_ts": 1766060940,
+          "address": "Jodhpur, Jodhpur, RAJASTHAN"
+        }
+      }
+    ],
+    "total": 264,
+    "counters": {
+      "DUTY.action_code": {
+        "off_duty": 228,
+        "on_duty": 36
+      },
+      "COLLECTION_STATUS.action_code": {
+        "not_collected": 2,
+        "collected": 3
+      },
+      "employee_team_id": {
+        "0": 182,
+        "25": 1,
+        "26": 1,
+        "30": 1,
+        "37": 2,
+        "41": 6,
+        "58": 7,
+        "59": 1,
+        "61": 7,
+        "62": 2,
+        "63": 37,
+        "65": 2,
+        "66": 3,
+        "79": 4,
+        "80": 2,
+        "81": 5,
+        "102": 1
+      },
+      "employee_employee_grade": {
+        "0": 253,
+        "1": 2,
+        "3": 1,
+        "": 8
+      },
+      "employee_status": {
+        "3": 258,
+        "4": 6
+      },
+      "device_status": {
+        "4": 264
+      },
+      "employee_type_id": {
+        "0": 198,
+        "8": 2,
+        "9": 6,
+        "12": 34,
+        "13": 3,
+        "14": 1,
+        "24": 8,
+        "25": 1,
+        "26": 1,
+        "27": 4,
+        "39": 2,
+        "40": 4
+      }
+    }
+  }
+}

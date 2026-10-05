@@ -1,715 +1,288 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {
-  ActivityIndicator,
-  Alert,
-  Keyboard,
-  Linking,
-  PermissionsAndroid,
-  Platform,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Switch,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-  View,
-} from 'react-native';
+import { useEffect, useState } from 'react';
+import { StyleSheet, View, Text, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
+import { SSMap } from "@sovereignsolutions/ssmap-react-native";
+import { HomeScreen, SCREENS } from './src/screens/HomeScreen';
+import { LoginScreen } from './src/screens/LoginScreen';
+import { DutyTrackingScreen } from './src/screens/DutyTrackingScreen';
+import { TrackingScreen } from './src/screens/TrackingScreen';
+import { MapSnapshotScreen } from './src/screens/MapSnapshotScreen';
+import { LiveTrackingScreen } from './src/screens/LiveTrackingScreen';
+import { HistoryTrackingScreen } from './src/screens/HistoryTrackingScreen';
+import { ShowMapScreen } from './src/screens/ShowMapScreen';
+import { DrawPointScreen } from './src/screens/DrawPointScreen';
+import { DrawLineScreen } from './src/screens/DrawLineScreen';
+import { DrawPolygonScreen } from './src/screens/DrawPolygonScreen';
+import { WhatHereScreen } from './src/screens/WhatHereScreen';
+import { SearchScreen } from './src/screens/SearchScreen';
+import { RouteScreen } from './src/screens/RouteScreen';
+import { ClusterLayerScreen } from './src/screens/ClusterLayerScreen';
+import { WeatherLocationScreen } from './src/screens/WeatherLocationScreen';
+import { WeatherCityForecastScreen } from './src/screens/WeatherCityForecastScreen';
+import { WeatherStatewiseRainfallScreen } from './src/screens/WeatherStatewiseRainfallScreen';
+import { getSavedTrackingStatus } from './src/TrackingSdk';
 
-import {
-  getSavedTrackingStatus,
-  getTrackingState,
-  initAndStartTracking,
-  stopTracking,
-  openNativeMapScreen,
-} from './src/TrackingSdk';
+// MAP API KEY
 
-function App() {
-  const scrollRef = useRef<ScrollView>(null);
+SSMap.setAPIKey("YOUR_API_KEY");
 
-  const [username, setUsername] = useState('');
-  const [loggedInUsername, setLoggedInUsername] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+type HomeReturnScreen = 'Login' | 'DutyTracking' | null;
 
-  const [trackingEnabled, setTrackingEnabled] = useState(false);
-  const [statusText, setStatusText] = useState('Tracking OFF');
-  const [loading, setLoading] = useState(false);
+// APP
+
+export default function App() {
+  /*
+   * First screen shown when app launches.
+   */
+  const [currentScreen, setCurrentScreen] = useState('Login');
+
+  /*
+   * Save logged-in username for DutyTrackingScreen
+   * and Tracking SDK.
+   */
+  const [loggedInUsername, setLoggedInUsername] = useState<string | null>(null);
+
+  const [restoringSession, setRestoringSession] = useState(true);
+
+  const [homeReturnScreen, setHomeReturnScreen] = useState<HomeReturnScreen>(null);
+
+  // RESTORE ACTIVE DUTY TRACKING
 
   useEffect(() => {
-    restoreTrackingState();
+    let mounted = true;
+
+    const restoreActiveTracking = async () => {
+      try {
+        const savedStatus = await getSavedTrackingStatus();
+
+        const savedUsername = savedStatus.username?.trim() ?? '';
+
+        if (mounted && savedStatus.enabled && savedUsername) {
+          setLoggedInUsername(savedUsername);
+
+          setCurrentScreen('DutyTracking');
+        }
+      } catch (error) {
+        console.log('restoreActiveTracking:', error);
+      } finally {
+        if (mounted) {
+          setRestoringSession(false);
+        }
+      }
+    };
+
+    restoreActiveTracking();
+
+    return () => {
+      mounted = false;
+    };
   }, []);
 
-  const restoreTrackingState = async () => {
-    try {
-      const saved = await getSavedTrackingStatus();
+  // LOGIN
 
-      if (saved?.username) {
-        setUsername(saved.username);
-        setLoggedInUsername(saved.username);
-
-        /**
-         * NAVIGATION POINT 1:
-         * If saved username exists, show tracking/map screen directly.
-         */
-        setIsLoggedIn(true);
-      }
-
-      const isTracking = await getTrackingState();
-
-      setTrackingEnabled(Boolean(isTracking));
-      setStatusText(isTracking ? 'Tracking ON' : 'Tracking OFF');
-    } catch (error) {
-      console.log('restoreTrackingState error:', error);
-      setTrackingEnabled(false);
-      setStatusText('Tracking OFF');
-    }
-  };
-
-  const onLogin = () => {
+  const handleLogin = (username: string) => {
     const cleanUsername = username.trim();
 
     if (!cleanUsername) {
-      Alert.alert('Username Required', 'Please enter username to continue.');
       return;
     }
 
-    Keyboard.dismiss();
+    console.log('Login clicked:', cleanUsername);
+
+    /*
+     * Later you can call your login API here.
+     *
+     * For now:
+     * username is treated as logged in.
+     */
 
     setLoggedInUsername(cleanUsername);
 
-    /**
-     * NAVIGATION POINT 2:
-     * This changes the screen from Login UI to Tracking/Map UI.
-     * No react-navigation is used here.
-     * We are conditionally rendering based on isLoggedIn.
+    setHomeReturnScreen(null);
+
+    /*
+     * After Sign In, open DutyTrackingScreen.
      */
-    setIsLoggedIn(true);
-
-    setStatusText(trackingEnabled ? 'Tracking ON' : 'Tracking OFF');
+    setCurrentScreen('DutyTracking');
   };
 
-  const onLogout = async () => {
-    if (trackingEnabled) {
-      Alert.alert(
-        'Tracking Active',
-        'Please stop tracking before changing the username.',
-      );
-      return;
-    }
+  // EXPLORE MAP
 
-    /**
-     * NAVIGATION POINT 3:
-     * This changes the screen from Tracking/Map UI back to Login UI.
+  const handleExploreMaps = () => {
+    /*
+     * No login required.
+     *
+     * Goes to existing HomeScreen.
      */
-    setIsLoggedIn(false);
 
-    setLoggedInUsername('');
-    setUsername('');
-    setStatusText('Tracking OFF');
+    setHomeReturnScreen('Login');
+    setCurrentScreen('Home');
   };
 
-  const openMapScreen = async () => {
-    try {
-      /**
-       * NATIVE NAVIGATION POINT:
-       * This calls Android native module method.
-       * React Native button -> openNativeMapScreen()
-       * -> TrackingSdk native module
-       * -> Android starts MapSDK Activity.
-       */
-      await openNativeMapScreen();
-    } catch (error: any) {
-      console.log('open map error:', error);
-      Alert.alert('Map Error', String(error?.message || error));
-    }
+  const handleDutyExploreMaps = () => {
+    setHomeReturnScreen('DutyTracking');
+    setCurrentScreen('Home');
   };
 
-  const requestAndroidPermissions = async () => {
-    if (Platform.OS !== 'android') {
-      return true;
-    }
-
-    try {
-      if (Number(Platform.Version) >= 33) {
-        const notificationResult = await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS,
-        );
-
-        if (notificationResult !== PermissionsAndroid.RESULTS.GRANTED) {
-          Alert.alert(
-            'Permission Required',
-            'Notification permission is required for tracking.',
-          );
-          return false;
-        }
-      }
-
-      const locationResult = await PermissionsAndroid.requestMultiple([
-        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-        PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
-      ]);
-
-      const fineGranted =
-        locationResult[PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION] ===
-        PermissionsAndroid.RESULTS.GRANTED;
-
-      const coarseGranted =
-        locationResult[PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION] ===
-        PermissionsAndroid.RESULTS.GRANTED;
-
-      if (!fineGranted && !coarseGranted) {
-        Alert.alert(
-          'Permission Required',
-          'Location permission is required to start tracking.',
-        );
-        return false;
-      }
-
-      if (Number(Platform.Version) >= 29) {
-        const activityResult = await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.ACTIVITY_RECOGNITION,
-        );
-
-        console.log('ACTIVITY_RECOGNITION result:', activityResult);
-      }
-
-      if (Number(Platform.Version) >= 29) {
-        const backgroundResult = await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.ACCESS_BACKGROUND_LOCATION,
-        );
-
-        console.log('ACCESS_BACKGROUND_LOCATION result:', backgroundResult);
-
-        if (backgroundResult !== PermissionsAndroid.RESULTS.GRANTED) {
-          Alert.alert(
-            'Background Location Required',
-            'For background tracking, please enable "Allow all the time" in App Settings.',
-            [
-              {
-                text: 'Cancel',
-                style: 'cancel',
-              },
-              {
-                text: 'Open Settings',
-                onPress: () => Linking.openSettings(),
-              },
-            ],
-          );
-        }
-      }
-
-      return true;
-    } catch (error) {
-      console.log('Permission error:', error);
-      Alert.alert('Permission Error', String(error));
-      return false;
-    }
-  };
-
-  const startTrackingFlow = async () => {
-    const cleanUsername = loggedInUsername.trim();
-
-    if (!cleanUsername) {
-      Alert.alert('Username Required', 'Please login before starting tracking.');
-      setTrackingEnabled(false);
+  const handleBackFromHome = () => {
+    if (!homeReturnScreen) {
       return;
     }
 
-    try {
-      setLoading(true);
-      setStatusText('Requesting permissions...');
+    const returnScreen = homeReturnScreen;
 
-      const hasPermission = await requestAndroidPermissions();
-
-      if (!hasPermission) {
-        setTrackingEnabled(false);
-        setStatusText('Tracking OFF');
-        return;
-      }
-
-      setStatusText('Initializing SDK...');
-
-      const result = await initAndStartTracking(cleanUsername);
-
-      setTrackingEnabled(true);
-      setStatusText(String(result || 'Tracking ON'));
-      Alert.alert('Success', 'Tracking started.');
-    } catch (error: any) {
-      console.log('start tracking error:', error);
-
-      setTrackingEnabled(false);
-      setStatusText('Tracking start failed');
-
-      Alert.alert('Tracking Error', String(error?.message || error));
-    } finally {
-      setLoading(false);
-    }
+    setHomeReturnScreen(null);
+    setCurrentScreen(returnScreen);
   };
 
-  const stopTrackingFlow = async () => {
-    try {
-      setLoading(true);
-      setStatusText('Stopping tracking...');
+  // CHANGE USER
 
-      const result = await stopTracking();
+  const handleChangeUser = () => {
+    setHomeReturnScreen(null);
 
-      setTrackingEnabled(false);
-      setStatusText(String(result || 'Tracking OFF'));
-      Alert.alert('Success', 'Tracking stopped.');
-    } catch (error: any) {
-      console.log('stop tracking error:', error);
+    setLoggedInUsername(null);
 
-      setTrackingEnabled(false);
-      setStatusText('Tracking stop failed');
-
-      Alert.alert('Stop Error', String(error?.message || error));
-    } finally {
-      setLoading(false);
-    }
+    setCurrentScreen('Login');
   };
 
-  const onToggleTracking = (value: boolean) => {
-    if (loading) {
-      return;
-    }
+  // TITLE
 
-    if (!isLoggedIn || !loggedInUsername.trim()) {
-      Alert.alert('Login Required', 'Please login with username first.');
-      setTrackingEnabled(false);
-      return;
-    }
+  const currentTitle = SCREENS.find(screen => screen.id === currentScreen)?.title ?? currentScreen;
 
-    if (value) {
-      Alert.alert(
-        'Start Tracking',
-        `Do you want to start duty tracking for ${loggedInUsername}?`,
-        [
-          {
-            text: 'Cancel',
-            style: 'cancel',
-            onPress: () => setTrackingEnabled(false),
-          },
-          {
-            text: 'Start',
-            onPress: () => {
-              setTrackingEnabled(true);
-              startTrackingFlow();
-            },
-          },
-        ],
+  // RENDER SCREEN
+
+  const renderScreen = () => {
+    if (restoringSession) {
+      return (
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color="#0878ff" />
+        </View>
       );
-
-      return;
     }
 
-    Alert.alert(
-      'Stop Tracking',
-      'Do you want to stop duty tracking?',
-      [
-        {
-          text: 'Cancel',
-          style: 'cancel',
-          onPress: () => setTrackingEnabled(true),
-        },
-        {
-          text: 'Stop',
-          style: 'destructive',
-          onPress: () => {
-            setTrackingEnabled(false);
-            stopTrackingFlow();
-          },
-        },
-      ],
-    );
+    switch (currentScreen) {
+      // LOGIN
+
+      case 'Login':
+        return <LoginScreen onExploreMaps={handleExploreMaps} onLogin={handleLogin} />;
+
+      // DUTY TRACKING
+
+      case 'DutyTracking':
+        return (
+          <DutyTrackingScreen
+            username={loggedInUsername ?? ''}
+            onChangeUser={handleChangeUser}
+            onExploreMaps={handleDutyExploreMaps}
+          />
+        );
+
+      // TRACKING
+
+      case 'Tracking': return <TrackingScreen />;
+      case 'MapSnapshot': return <MapSnapshotScreen />;
+      case 'LiveTracking': return <LiveTrackingScreen />;
+      case 'HistoryTracking': return <HistoryTrackingScreen />;
+      case 'ShowMap': return <ShowMapScreen />;
+
+      case 'DrawPoint': return <DrawPointScreen />;
+
+      case 'DrawLine': return <DrawLineScreen />;
+
+      case 'DrawPolygon': return <DrawPolygonScreen />;
+
+      case 'WhatHere': return <WhatHereScreen />;
+
+      case 'Search': return <SearchScreen />;
+
+      case 'Route': return <RouteScreen />;
+
+      case 'ClusterLayer': return <ClusterLayerScreen />;
+
+      case 'WeatherLocation': return <WeatherLocationScreen />;
+
+      case 'WeatherCityForecast': return <WeatherCityForecastScreen />;
+
+      case 'WeatherStatewiseRainfall': return <WeatherStatewiseRainfallScreen />;
+
+      // HOME
+
+      default:
+        return (
+          <HomeScreen
+            onNavigate={setCurrentScreen}
+            onBack={homeReturnScreen ? handleBackFromHome : undefined}
+            backLabel={homeReturnScreen === 'DutyTracking' ? 'Back to Duty Tracking' : 'Back to Login'}
+          />
+        );
+    }
   };
 
-  const isTrackingOn = trackingEnabled;
+  // UI
 
   return (
-    <SafeAreaView style={styles.safeArea}>
-      <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-        <ScrollView
-          ref={scrollRef}
-          contentContainerStyle={[
-            styles.container,
-            !isLoggedIn && styles.loginContainer,
-          ]}
-          keyboardShouldPersistTaps="handled"
-          keyboardDismissMode="on-drag"
-          showsVerticalScrollIndicator={false}>
+    <SafeAreaProvider>
+      <SafeAreaView style={styles.page}>
+        {/*
+          Don't show header on:
+          - Login
+          - Home
+          - DutyTracking
+
+          DutyTrackingScreen has its own UI/header.
+        */}
+
+        {currentScreen !== 'Home' && currentScreen !== 'Login' && currentScreen !== 'DutyTracking' && (
           <View style={styles.header}>
-            <View style={styles.logoCircle}>
-              <Text style={styles.logoText}>SS</Text>
-            </View>
+            <TouchableOpacity onPress={() => setCurrentScreen('Home')} style={styles.backButton}>
+              <Text style={styles.backButtonText}>{'< Back'}</Text>
+            </TouchableOpacity>
 
-            <Text style={styles.title}>Sovereign SDK Demo</Text>
-            <Text style={styles.subtitle}>
-              Login, manage duty tracking, and feel sovereign map experience.
-            </Text>
+            <Text style={styles.headerTitle}>{currentTitle}</Text>
           </View>
+        )}
 
-          {!isLoggedIn ? (
-            <View style={styles.card}>
-              <Text style={styles.sectionTitle}>Login</Text>
-              <Text style={styles.sectionSubtitle}>
-                Enter username to continue
-              </Text>
-
-              <Text style={styles.label}>Username</Text>
-
-              <TextInput
-                value={username}
-                onChangeText={setUsername}
-                placeholder="Enter username"
-                placeholderTextColor="#9ca3af"
-                autoCapitalize="none"
-                autoCorrect={false}
-                returnKeyType="done"
-                onSubmitEditing={onLogin}
-                blurOnSubmit
-                onFocus={() => {
-                  setTimeout(() => {
-                    scrollRef.current?.scrollTo({
-                      y: 80,
-                      animated: true,
-                    });
-                  }, 250);
-                }}
-                style={styles.input}
-              />
-
-              <TouchableOpacity
-                activeOpacity={0.85}
-                style={styles.loginButton}
-                onPress={onLogin}>
-                <Text style={styles.loginButtonText}>Login</Text>
-              </TouchableOpacity>
-            </View>
-          ) : (
-            <View style={styles.card}>
-              <View style={styles.userCard}>
-                <View>
-                  <Text style={styles.userLabel}>Logged in as</Text>
-                  <Text style={styles.userName}>{loggedInUsername}</Text>
-                </View>
-
-                <TouchableOpacity
-                  activeOpacity={0.85}
-                  style={[
-                    styles.changeUserButton,
-                    (loading || trackingEnabled) && styles.disabledButton,
-                  ]}
-                  onPress={onLogout}
-                  disabled={loading || trackingEnabled}>
-                  <Text style={styles.changeUserText}>Change</Text>
-                </TouchableOpacity>
-              </View>
-
-
-              <View style={styles.switchCard}>
-                <View style={styles.switchTextContainer}>
-                  <Text style={styles.switchText}>Duty Tracking</Text>
-                  <Text style={styles.switchSubText}>
-                    Tap switch to start or stop tracking
-                  </Text>
-                </View>
-
-                <Switch
-                  value={trackingEnabled}
-                  disabled={loading}
-                  onValueChange={onToggleTracking}
-                  thumbColor={trackingEnabled ? '#ffffff' : '#f4f4f5'}
-                  trackColor={{
-                    false: '#d1d5db',
-                    true: '#16a34a',
-                  }}
-                />
-              </View>
-
-              <View style={styles.statusBox}>
-                {loading ? (
-                  <ActivityIndicator size="small" />
-                ) : (
-                  <View
-                    style={[
-                      styles.statusDot,
-                      isTrackingOn ? styles.statusDotOn : styles.statusDotOff,
-                    ]}
-                  />
-                )}
-
-                <Text style={styles.status}>{statusText}</Text>
-              </View>
-
-              <Text style={styles.note}>
-                Turning ON duty will ask permissions first, then initialize and
-                start the tracking SDK.
-              </Text>
-
-              <TouchableOpacity
-                activeOpacity={0.85}
-                style={styles.mapButton}
-                onPress={openMapScreen}>
-                <Text style={styles.mapButtonText}>Explore Map</Text>
-              </TouchableOpacity>
-
-              
-            </View>
-          )}
-        </ScrollView>
-      </TouchableWithoutFeedback>
-    </SafeAreaView>
+        <View style={styles.container}>{renderScreen()}</View>
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
+// STYLES
+
 const styles = StyleSheet.create({
-  safeArea: {
+  page: {
     flex: 1,
-    backgroundColor: '#f3f4f6',
-  },
-  container: {
-    flexGrow: 1,
-    padding: 20,
-    paddingBottom: 60,
-  },
-  loginContainer: {
-    justifyContent: 'flex-start',
-    paddingTop: 36,
+    backgroundColor: '#ffffff',
   },
   header: {
+    flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 22,
-  },
-  logoCircle: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    backgroundColor: '#0f766e',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 12,
-  },
-  logoText: {
-    color: '#ffffff',
-    fontSize: 22,
-    fontWeight: '800',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: '800',
-    color: '#111827',
-    textAlign: 'center',
-  },
-  subtitle: {
-    marginTop: 6,
-    fontSize: 14,
-    lineHeight: 20,
-    color: '#6b7280',
-    textAlign: 'center',
-  },
-  card: {
+    padding: 15,
     backgroundColor: '#ffffff',
-    borderRadius: 22,
-    padding: 20,
-    borderWidth: 1,
-    borderColor: '#e5e7eb',
-    shadowColor: '#000000',
-    shadowOpacity: 0.08,
-    shadowRadius: 18,
-    shadowOffset: {
-      width: 0,
-      height: 8,
-    },
-    elevation: 5,
+    borderBottomWidth: 1,
+    borderBottomColor: '#dddddd',
   },
-  label: {
-    fontSize: 14,
-    fontWeight: '600',
-    marginTop: 22,
-    marginBottom: 8,
-    color: '#374151',
+  backButton: {
+    paddingRight: 15,
   },
-  input: {
-    borderWidth: 1,
-    borderColor: '#d1d5db',
-    backgroundColor: '#ffffff',
-    borderRadius: 12,
-    paddingHorizontal: 14,
-    height: 48,
-    color: '#111827',
-    fontSize: 15,
-  },
-  loginButton: {
-    marginTop: 22,
-    height: 50,
-    borderRadius: 14,
-    backgroundColor: '#0f766e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  loginButtonText: {
-    color: '#ffffff',
+  backButtonText: {
+    color: '#007AFF',
     fontSize: 16,
-    fontWeight: '800',
-  },
-  userCard: {
-    backgroundColor: '#ecfdf5',
-    borderColor: '#bbf7d0',
-    borderWidth: 1,
-    borderRadius: 16,
-    padding: 14,
-    marginBottom: 20,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  userLabel: {
-    fontSize: 12,
-    color: '#047857',
     fontWeight: '600',
   },
-  userName: {
-    marginTop: 4,
-    fontSize: 17,
-    color: '#064e3b',
-    fontWeight: '800',
-  },
-  changeUserButton: {
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-    backgroundColor: '#ffffff',
-    borderRadius: 999,
-  },
-  disabledButton: {
-    opacity: 0.5,
-  },
-  changeUserText: {
-    color: '#0f766e',
-    fontWeight: '800',
-    fontSize: 13,
-  },
-  statusRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: 22,
-  },
-  sectionTitle: {
+  headerTitle: {
     fontSize: 18,
-    fontWeight: '700',
-    color: '#111827',
+    fontWeight: 'bold',
   },
-  sectionSubtitle: {
-    marginTop: 4,
-    fontSize: 13,
-    color: '#6b7280',
-  },
-  statusBadge: {
-    paddingHorizontal: 14,
-    paddingVertical: 7,
-    borderRadius: 999,
-  },
-  statusBadgeOn: {
-    backgroundColor: '#dcfce7',
-  },
-  statusBadgeOff: {
-    backgroundColor: '#fee2e2',
-  },
-  statusBadgeText: {
-    fontSize: 13,
-    fontWeight: '800',
-  },
-  statusBadgeTextOn: {
-    color: '#15803d',
-  },
-  statusBadgeTextOff: {
-    color: '#b91c1c',
-  },
-  switchCard: {
-    borderWidth: 1,
-    borderColor: '#e5e7eb',
-    backgroundColor: '#f9fafb',
-    borderRadius: 16,
-    padding: 14,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  switchTextContainer: {
+  container: {
     flex: 1,
-    paddingRight: 12,
+    width: '100%',
   },
-  switchText: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: '#111827',
-  },
-  switchSubText: {
-    marginTop: 4,
-    fontSize: 12,
-    color: '#6b7280',
-  },
-  statusBox: {
-    marginTop: 18,
-    borderRadius: 14,
-    backgroundColor: '#f3f4f6',
-    padding: 14,
-    flexDirection: 'row',
+  loadingContainer: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  statusDot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    marginRight: 10,
-  },
-  statusDotOn: {
-    backgroundColor: '#16a34a',
-  },
-  statusDotOff: {
-    backgroundColor: '#ef4444',
-  },
-  status: {
-    fontSize: 15,
-    fontWeight: '600',
-    color: '#374151',
-    textAlign: 'center',
-  },
-  note: {
-    marginTop: 14,
-    fontSize: 13,
-    lineHeight: 19,
-    textAlign: 'center',
-    color: '#6b7280',
-  },
-  mapButton: {
-    marginTop: 22,
-    height: 50,
-    borderRadius: 14,
-    backgroundColor: '#0f766e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  mapButtonText: {
-    color: '#ffffff',
-    fontSize: 16,
-    fontWeight: '800',
-  },
-  refreshButton: {
-    marginTop: 12,
-    height: 46,
-    borderRadius: 14,
-    backgroundColor: '#e0f2fe',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  refreshButtonText: {
-    color: '#0369a1',
-    fontSize: 14,
-    fontWeight: '800',
+    backgroundColor: '#ffffff',
   },
 });
-
-export default App;
