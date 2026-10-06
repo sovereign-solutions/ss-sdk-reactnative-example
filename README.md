@@ -2,11 +2,11 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 ## Tracking SDK integration (Android)
 
-See the [React Native Android Tracking SDK integration guide](TRACKING_SDK_ANDROID.md) for Maven setup, backend configuration, Kotlin bridge registration, permissions, authentication modes, sample code, and troubleshooting.
+See the [React Native Android Tracking SDK integration guide](docs/TRACKING_SDK_ANDROID.md) for Maven setup, backend configuration, Kotlin bridge registration, permissions, authentication modes, sample code, and troubleshooting.
 
 ## Tracking SDK integration (iOS)
 
-See the [React Native iOS Tracking SDK integration guide](TRACKING_SDK_IOS.md) for CocoaPods setup, Swift bridge integration, background location configuration, authentication, and sample code. A [downloadable Word document](docs/Tracking_SDK_iOS_Integration_Guide.docx) includes the complete native bridge source.
+See the [React Native iOS Tracking SDK integration guide](docs/TRACKING_SDK_IOS.md) for CocoaPods setup, Swift bridge integration, background location configuration, authentication, and sample code. 
 
 ## Installing the Sovereign Solutions Map SDK
 
